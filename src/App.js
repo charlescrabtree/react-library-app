@@ -10,6 +10,7 @@ function App() {
       <Route exact path="/">
         <main className="container">
           <h1>Library Catalog</h1>
+          <Link to="/books">Go to Books</Link>
         </main>
       </Route>
 
