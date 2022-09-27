@@ -7,19 +7,18 @@ function App() {
   // TODO: Add routes to books & views
   return (
     <Switch>
-      <Route exact path="/">
-        <main className="container">
-          <h1>Library Catalog</h1>
-          <Link to="/books">Go to Books</Link>
-        </main>
-      </Route>
-
       <Route path="/books/:id">
         <BookDetail />
       </Route>
 
       <Route path="/books">
         <BookList />
+      </Route>
+      <Route exact path="/">
+        <main className="container">
+          <h1>Library Catalog</h1>
+          <Link to="/books">Go to Books</Link>
+        </main>
       </Route>
     </Switch>
   );
